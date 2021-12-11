@@ -1,0 +1,84 @@
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar{
+    padding: 20px 0;
+}
+
+.nav-item{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    background: #652f81;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: #652f81;
+    padding: 5px 15px;
+}
+
+.banner{
+    position: relative;
+    background: url(../../Images/baner2.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+}
+
+.banner h2{
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.8em;
+    font-weight: 1000;
+    color: #652f81;
+    text-transform: uppercase;
+}
+
+.banner p{
+    margin: 1em 0 0;
+    padding: 0px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #000000;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    color: #fff;
+    border: 2px solid #8f8f8f;
+    border-radius: 0;
+    outline: none;
+}
+
+.navbar-collapse{
+    background: #fff;
+}
+
+@media (max-width: 768px){
+    .banner{
+        padding: 200px 0;
+    }
+    .banner h2{
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 1600px){
+    .banner{
+        padding: 200px 0;
+    }
+    .banner h2{
+        font-size: 5.0em;  
+    }
+    .banner p{
+        font-size: 2.5em;  
+    }
+}
