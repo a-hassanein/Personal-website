@@ -1,3 +1,9 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    
+}
+
 header{
     position: absolute;
     z-index: 10;
@@ -9,7 +15,7 @@ header{
 }
 
 .nav-item{
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -33,11 +39,11 @@ header{
     padding: 250px 0 200px;
 }
 
-.banner h2{
+.banner h2 {
     margin: 0px;
     padding: 0px;
     font-size: 3.8em;
-    font-weight: 1000;
+    font-weight: bold;
     color: #652f81;
     text-transform: uppercase;
 }
@@ -48,6 +54,8 @@ header{
     font-size: 2.2em;
     line-height: 1.5em;
     color: #535353;
+    font-weight: 400;
+    text-transform: capitalize;
 }
 
 .navbar-light .navbar-toggler{
