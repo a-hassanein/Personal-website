@@ -1,16 +1,54 @@
-function download(){
-    axios({
-        url:'https://source.unsplash.com/random/500x500',
-        method:'GET',
-        responseType: 'blob'
-})
-.then((response) => {
-       const url = window.URL
-       .createObjectURL(new Blob([response.data]));
-              const link = document.createElement('a');
-              link.href = url;
-              link.setAttribute('download', 'image.jpg');
-              document.body.appendChild(link);
-              link.click();
-})
+function onemouseOver() {
+    document.getElementById("faceID").src="../../Images/facebook2.png";
 }
+  
+function onemouseOut() {
+    document.getElementById("faceID").src="../../Images/facebook.png";
+}
+
+/////////////////////////////////////////////////
+function twomouseOver() {
+    document.getElementById("twiterID").src="../../Images/twiter2.png";
+}
+  
+function twomouseOut() {
+    document.getElementById("twiterID").src="../../Images/twiter.png";
+}
+
+/////////////////////////////////////////////////
+function threemouseOver() {
+    document.getElementById("instgramID").src="../../Images/instgram2.png";
+}
+  
+function threemouseOut() {
+    document.getElementById("instgramID").src="../../Images/instgram.png";
+}
+
+/////////////////////////////////////////////////
+function fourmouseOver() {
+    document.getElementById("linkeID").src="../../Images/linked2.png";
+}
+  
+function fourmouseOut() {
+    document.getElementById("linkeID").src="../../Images/linked.png";
+}
+
+/////////////////////////////////////////////////
+function fivemouseOver() {
+    document.getElementById("githubID").src="../../Images/github2.png";
+}
+  
+function fivemouseOut() {
+    document.getElementById("githubID").src="../../Images/github.png";
+}
+
+/////////////////////////////////////////////////
+function sixmouseOver() {
+    document.getElementById("behanceID").src="../../Images/behance2.png";
+}
+  
+function sixmouseOut() {
+    document.getElementById("behanceID").src="../../Images/behance.png";
+}
+
+/////////////////////////////////////////////////
