@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cairo','Oswald', sans-serif;
+    font-family: 'Oswald','Cairo', sans-serif;
 
 }
 
@@ -19,7 +19,12 @@ header{
     position: absolute;
     z-index: 10;
     width: 100%;
+    font-family: 'Cairo','Oswald', sans-serif;
 }
+
+/* header{
+    font-family: 'Cairo','Oswald', sans-serif;
+} */
 
 .navbar{
     padding: 20px 0;
@@ -29,6 +34,7 @@ header{
     font-weight: 750;
     color: #363636;
     text-transform: uppercase;
+    font-family: 'Cairo','Oswald', sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
