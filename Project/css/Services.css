@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald','Cairo', sans-serif;
+
+}
+
+
+
+
+.title{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+
+.title h2 {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3.5em;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #363636;
+    /* bottom: -20px; */
+}
+
+.title div{
+    position: relative;
+    width: 180px;
+    height: 5px;
+    background: #652f81;
+    /* justify-content: center;
+    align-items: center; */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.title h2 ::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 50px;
+    height: 1px;
+    background: black;    
+}
+
+.adjust{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 40px;
+    padding-top: 80px;
+    display: inline-block;
+}
+
+.cent{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contant{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    
+}
+
+.contant .box{
+    position: relative;
+    width: 520px;
+    height: 600px;
+    background-color: #fff;
+    padding: 100px 40px 60px;  
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.027);
+    border: 1px solid#652f81;
+    margin-top: 10px;
+    
+}
+
+
+
+.contant .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #652f81;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;  
+    /* transition: 0.5s ease-in-out ;   */
+    
+}
+
+.contant .box:hover:before{
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.5s; 
+}
+
+.contant .box h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 4em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.contant .box:hover h2{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+
+}
+
+.contant .box h3{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: #000;
+    transition: 0.5s;
+}
+
+.contant .box:hover p,
+.contant .box:hover h3{
+    color: #fff;
+}
+
+.contant .box p{
+    position: relative;
+    z-index: 2;
+    color: #363636;
+    transition: 0.5s;
+}
+
+@media(max-width:992px){
+    .contant .box{
+        width: 320px;
+        height: 100%;
+    }
+
+    .title h2 {
+        font-size: 2.5em;
+    }
+}
